@@ -4,29 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>How to be bad at Chess</title>
 </head>
 <body>
     <h1>Dummy's guide to playing 100 rated elo chess</h1>
-    <nav class = "pages">
-        <ol>
-            <li class ="pages">
+    <nav class="pages">
+        <ol class="navList">
+            <li>
                 <p><a href = index.html>Blog</a></p>
             </li>
-            <li class ="pages">
+            <li>
                 <p><a href = about.html>About</a></p>
             </li>
-            <li class ="pages">
+            <li>
                 <p><a href = contact.html>Contact</a></p>
             </li>
         </ol>
     </nav>
-    <section>
+    <section id="blog">
         <h2>Blog Posts</h2>
-            <article>
+            <article class="blog-post">
                 <h3>General Rules</h3>
-                <address class="author"><a rel = "author" href="https://www.linkedin.com/in/daniel-sohn-668428234/"> Daniel Sohn </a></address>>
-                <time datetime="2022-10-15" title="October 6, 2022">October 6, 2022</time>
+                <header class = "postInfo">
+                    <address class="author"><a rel = "author" href="https://www.linkedin.com/in/daniel-sohn-668428234/">Daniel Sohn </a></address>>
+                    <time datetime="2022-10-16" title="October 16, 2022"><i>October 16, 2022</i></time>
+                </header>
                 <p>
                     In the magical world of <em>100</em> rated chess the higher level tactics and strategy go out the window. 
                     With blunders left and right and opening theory in the garbage can, it can be easy to lose yourself in this battlefield.
@@ -84,34 +87,36 @@
                     It matters not what it costs, be you losing checkmate, or you getting checkmated. 
                     Sometimes, the shock value of doing this move alone is enough to make opponent resign because they think your a hacker.
                     All in all, passing down this fancy move can never happen in a 100 rated game.
-                    <table>
+                    <table id = "moveTable">
                         <tr>
-                            <th>Next move to play</th>
+                            <th><i>Next move to play</i></th>
                             <th>When to play</th>
                             <th>What to do after</th>
                         </tr>
                         <tr>
-                            <td>En passant</td>
+                            <th class = "nextMove"><i>En passant</i></th>
                             <td>Whenever possible</td>
                             <td>Flex superiority</td>
                         </tr>
                         <tr>
-                            <td>Trade pieces</td>
+                            <th class = "nextMove"><i>pieces</i></th>
                             <td>You can take a piece</td>
                             <td>Trade another piece</td>
                         </tr>
                         <tr>
-                            <td>Blunder pieces</td>
+                            <th class = "nextMove"><i>Blunder pieces</i></th>
                             <td>Tunnel vision on something</td>
                             <td>Offer a draw</td>
                         </tr>
                     </table>
             </article>
 
-            <article>
+            <article class="blog-post">
                 <h3>Game Modes</h3>
-                <address class="author"><a rel = "author" href="https://www.linkedin.com/in/daniel-sohn-668428234/"> Daniel Sohn </a></address>>
-                <time datetime="2022-10-15" title="October 6, 2022">October 6, 2022</time>
+                <header class = "postInfo">
+                    <address class="author"><a rel = "author" href="https://www.linkedin.com/in/daniel-sohn-668428234/">Daniel Sohn </a></address>>
+                    <time datetime="2022-10-16" title="October 16, 2022"><i>October 16, 2022</i></time>
+                </header>
                 <p>
                     When one has hit rock bottom elo, it would be normal to ask, is there really a difference between game modes when playing at the lowest level?
                     The answer to that, is a resounding yes, but then the question comes up, just what is different?
@@ -137,7 +142,7 @@
                 </p>
             </article>
     </section>
-    <section>
+    <section id="SubscribeBox">
         <h3>Interested in the content?</h3>
         <form>
             <label>
