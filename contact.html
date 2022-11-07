@@ -9,19 +9,13 @@
 </head>
 <body>
     <h1>Dummy's guide to playing 100 rated elo chess</h1>
-    <nav class = "pages">
-        <ol>
-            <li>
-                <p><a href = index.html>Blog</a></p>
-            </li>
-            <li>
-                <p><a href = about.html>About</a></p>
-            </li>
-            <li>
-                <p><a href = contact.html>Contact</a></p>
-            </li>
-        </ol>
-    </nav>
+    <header class = "navHeader">
+        <nav class="pages">
+            <p id = "navAbout"><a href = about.html>About</a></p>
+            <p id = "navIndex"><a href = index.html>Blog</a></p>
+            <p id = "navContact"><a href = contact.html>Contact</a></p>
+        </nav>
+    </header>
     <section id ="contact">
         <h2>Contact Information</h2>
         <form>
@@ -34,7 +28,7 @@
             <p>
                 <label>
                     Email Adress:
-                    <input type="email" name="email" id="email_input" multiple placeholder="email_adress@email.com" required>
+                    <input type="email" name="email" class="email_input" multiple placeholder="email_adress@email.com" required>
                 </label>
             </p>           
             <p>
@@ -58,5 +52,17 @@
 
         </form>
     </section>
+    <footer class = "footerInfo">
+        <section id="SubscribeBox">
+            <h3>Interested in the content?</h3>
+            <form>
+                <label>
+                    Signup to the newsletter for more!
+                    <input type="email" name="email" class="email_input" multiple placeholder="email_adress@email.com" required>
+                </label>
+                <button>Sign Up</button>
+            </form>
+        </section>
+    </footer>
 </body>
 </html>

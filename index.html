@@ -9,19 +9,13 @@
 </head>
 <body>
     <h1>Dummy's guide to playing 100 rated elo chess</h1>
-    <nav class="pages">
-        <ol class="navList">
-            <li>
-                <p><a href = index.html>Blog</a></p>
-            </li>
-            <li>
-                <p><a href = about.html>About</a></p>
-            </li>
-            <li>
-                <p><a href = contact.html>Contact</a></p>
-            </li>
-        </ol>
-    </nav>
+    <header class = "navHeader">
+        <nav class="pages">
+            <p id = "navAbout"><a href = about.html>About</a></p>
+            <p id = "navIndex"><a href = index.html>Blog</a></p>
+            <p id = "navContact"><a href = contact.html>Contact</a></p>
+        </nav>
+    </header>
     <section id="blog">
         <h2>Blog Posts</h2>
             <article class="blog-post">
@@ -69,7 +63,7 @@
                 <p>
                     To finish everything off, the most important rule of all time at low rated chess;
                     <i><em>En Passant is mandatory</em></i>
-                    <figure>
+                    <figure id = "EnPassant">
                         <img src="En_passant.jpg" alt="Three chess board slices with three columns and eight rows each; 
                         The rows are indicated by numbers 1 to 8 and the columns with letters a to c.
                         Black is on top and white is on bottom, white pawns move upwards. 
@@ -87,6 +81,8 @@
                     It matters not what it costs, be you losing checkmate, or you getting checkmated. 
                     Sometimes, the shock value of doing this move alone is enough to make opponent resign because they think your a hacker.
                     All in all, passing down this fancy move can never happen in a 100 rated game.
+                    <br class= "floatFix">
+
                     <table id = "moveTable">
                         <tr>
                             <th><i>Next move to play</i></th>
@@ -128,7 +124,7 @@
                     Not only will you make mistakes that teach you nothing, you have no time to think about why what you did was wrong! 
                     On top of that, you don't even get to learn from your opponent once you go low enough! 
                     Why play chess when you can do the equivalent of smashing your face on the keyboard to write an essay?
-                    <figure>
+                    <figure id = "chessClock">
                         <img src="Chess_clock.jpg" alt="Image of a chess clock at 2 minutes for each side, 
                         there is a seesaw type button on the top that makes the non depressed side's timer count down.">
                         <figcaption>Example of chess clock <cite><a href="https://commons.wikimedia.org/wiki/File:DGT_2010_digital_chess_clock.ajb.jpg">https://commons.wikimedia.org/wiki/File:DGT_2010_digital_chess_clock.ajb.jpg</a></cite></figcaption>
@@ -140,17 +136,20 @@
                     Queen in danger of being trapped and captured? Take 1 second to make the next move. 
                     Not only do you make your play worse, you don't even get to learn from the experience by making an obvious mistake most of the time, amazing deal!
                 </p>
+                <br class= "floatFix">
             </article>
     </section>
-    <section id="SubscribeBox">
-        <h3>Interested in the content?</h3>
-        <form>
-            <label>
-                Signup to the newsletter for more!
-                <input type="email" name="email" id="email_input" multiple placeholder="email_adress@email.com" required>
-            </label>
-            <button>Sign Up</button>
-        </form>
-    </section>
+    <footer class = "footerInfo">
+        <section id="SubscribeBox">
+            <h3>Interested in the content?</h3>
+            <form>
+                <label>
+                    Signup to the newsletter for more!
+                    <input type="email" name="email" class="email_input" multiple placeholder="email_adress@email.com" required>
+                </label>
+                <button>Sign Up</button>
+            </form>
+        </section>
+    </footer>
 </body>
 </html>

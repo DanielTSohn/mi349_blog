@@ -9,23 +9,17 @@
 </head>
 <body>
     <h1>Dummy's guide to playing 100 rated elo chess</h1>
-    <nav class = "pages">
-        <ol>
-            <li>
-                <p><a href = index.html>Blog</a></p>
-            </li>
-            <li>
-                <p><a href = about.html>About</a></p>
-            </li>
-            <li>
-                <p><a href = contact.html>Contact</a></p>
-            </li>
-        </ol>
-    </nav>
+    <header class = "navHeader">
+        <nav class="pages">
+            <p id = "navAbout"><a href = about.html>About</a></p>
+            <p id = "navIndex"><a href = index.html>Blog</a></p>
+            <p id = "navContact"><a href = contact.html>Contact</a></p>
+        </nav>
+    </header>
     <section id = "about">
         <h2>About</h2>
         <p>
-            <img src="sohndan1.jpg" alt="Picture of the author">
+            <img id = "authorPicture" src="sohndan1.jpg" alt="Picture of the author">
         </p>
         <p>
             Daniel Sohn is a student at MSU taking MI349. From this class teaching web development he is able to make this website. 
@@ -48,6 +42,19 @@
                     mi349_blog
                 </li>
             </ol>
+        <br class="floatFix">
     </section>
+    <footer class = "footerInfo">
+        <section id="SubscribeBox">
+            <h3>Interested in the content?</h3>
+            <form>
+                <label>
+                    Signup to the newsletter for more!
+                    <input type="email" name="email" class="email_input" multiple placeholder="email_adress@email.com" required>
+                </label>
+                <button>Sign Up</button>
+            </form>
+        </section>
+    </footer>
 </body>
 </html>
